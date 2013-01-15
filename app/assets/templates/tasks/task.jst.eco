@@ -1,0 +1,4 @@
+<input class="toggle" type="checkbox" <%= @task.get('completed') ? 'checked' : '' %>>
+<%= @task.get('name') %>
+<button class="destroy">Remove</button>
+

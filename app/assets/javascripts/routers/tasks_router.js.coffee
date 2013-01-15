@@ -4,8 +4,8 @@ class TodoApp.Routers.Tasks extends Backbone.Router
 
   initialize: ->
     @collection = new TodoApp.Collections.Tasks()
-    @collection.fetch()
-
+    @collection.reset($('#container').data('tasks'))
+  
   index: ->
     view = new TodoApp.Views.TasksIndex(collection: @collection)
-    $("#tasks").html(view.render().el)
+    $("#container").html(view.render().el)

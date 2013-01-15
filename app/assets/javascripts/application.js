@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
+//= require twitter/bootstrap
 //= require underscore
 //= require backbone
 //= require todo_app
@@ -21,3 +23,12 @@
 //= require_tree ./views
 //= require_tree ./routers
 //= require_tree .
+
+$(function() {
+  $("#tasks").sortable({
+    stop: function(event, ui){
+      ui.item.trigger('drop', ui.item.index());
+    }
+  });
+  $("#tasks").disableSelection();
+});
