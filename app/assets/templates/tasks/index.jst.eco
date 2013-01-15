@@ -4,5 +4,9 @@
   <input type="text" name="name" id="new_task_name">
   <input type="submit" value="Add">
 </form>
-
+<label id="error"></label>
+<h2> Completed Tasks </h2>
+<ul id="completed_tasks">
+</ul>
+<h2> Incomplete Task </h2>
 <ul id="tasks"></ul>
