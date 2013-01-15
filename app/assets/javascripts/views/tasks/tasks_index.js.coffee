@@ -8,6 +8,7 @@ class TodoApp.Views.TasksIndex extends Backbone.View
   initialize: ->
     @collection.on('reset', @render, this)
     @collection.on('add', @appendTask, this)
+    @collection.on('change', @render, this)
 
   render: ->
     $(@el).html(@template())
