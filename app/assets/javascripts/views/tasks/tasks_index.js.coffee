@@ -27,8 +27,13 @@ class TodoApp.Views.TasksIndex extends Backbone.View
     newAttributes = {name: $('#new_task_name').val()}
     @collection.create newAttributes,
       wait: true
-      success: -> $('#new_task')[0].reset()
+      success: @handleSuccess
       error: @handleError
 
   handleError: (task, response) ->
     $('#error').text(response)
+    $('#error').removeClass('hidden')
+
+  handleSuccess: -> 
+    $('#new_task')[0].reset()
+    $('#error').addClass('hidden')
