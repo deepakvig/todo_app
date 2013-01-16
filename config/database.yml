@@ -35,7 +35,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: todo_app_production
+  database: d5bk18kqmn96f0
   pool: 5
   username: kajsafzeunpzho
   password: 3eEvnrs3nigUc1Gh2ReN04sIdZ
