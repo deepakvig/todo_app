@@ -1,5 +1,4 @@
 <input class="is-done" type="checkbox" <%= 'checked' if @task.get('completed') %> />
-<label class=""><%= @task.get('name') %></label>
+<label class="lead"><%= @task.get('name') %></label>
 <input type="text" value="<%= @task.get('name') %>" class="hidden" />
-<button class="destroy">Remove</button>
-
+<button class="destroy">&#10006;</button>

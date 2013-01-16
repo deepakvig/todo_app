@@ -1,12 +1,16 @@
+<div class="hero-unit">
 <h1>Tasks</h2>
 
 <form id="new_task">
   <input type="text" name="name" id="new_task_name">
-  <input type="submit" value="Add">
+  <input type="submit" value="Add" class="btn btn-primary">
 </form>
-<label id="error"></label>
+<label id="error" class="alert alert-error hidden"></label>
+<h2> What needs to be done? </h2>
+<ul id="tasks"></ul>
+<br>
+<br>
 <h2> Completed Tasks </h2>
 <ul id="completed_tasks">
 </ul>
-<h2> Incomplete Task </h2>
-<ul id="tasks"></ul>
+</div>
