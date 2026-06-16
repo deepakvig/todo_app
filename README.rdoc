@@ -5,6 +5,7 @@ It uses:
   Devise
   Twitter Bootstrap
   Backbone
+  Javascript
 
 You can create an account. 
 Then you can do various thing with this Task List
