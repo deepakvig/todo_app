@@ -14,4 +14,4 @@ Then you can do various thing with this Task List
   Update Task (By double clicking on the Task
   Delete the Task
   Rearrange the incomplete Task
-  Mark the task as complete or incomplete by checking the checkbox or unchecking it
+  Mark the task as complete or incomplete by checking the checkbox or unchecking it.
